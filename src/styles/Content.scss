@@ -1,0 +1,110 @@
+@import './Variables.scss';
+@import './Mixins.scss';
+@import './Resets.scss';
+
+body {
+    -webkit-font-smoothing: antialiased;
+  	-moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+    position:relative;
+    color:#2b2b2b;
+    background:#ffffff;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    font-size: 1.8rem;
+    line-height: 1.25em;
+}
+
+a {
+    font-size:600;
+	&:hover, &:focus {
+        text-decoration:underline;
+	}
+	&:focus {
+		outline: none;
+	}
+	&:active {
+		outline: none;
+	}
+	&:link {
+		-webkit-tap-highlight-color : transparent;
+	}
+}
+
+img { max-width:100%; }
+
+h1, h2, h3, h4, h5, h6 {
+	text-rendering: optimizelegibility;
+	margin:0;
+
+	a {
+		text-decoration: none;
+	}
+}
+
+h1 {
+    @include fw-medium;
+    margin:0 0 2rem;
+    line-height:1em;
+    font-size:5rem;
+    @media #{$mediaSM}{
+        font-size: 7rem;
+    }
+}
+
+h2 {
+    @include tt-upper;
+    margin: 0 0 2.9rem;
+    line-height:1em;
+    @include fw-light;
+    font-size: 4.5rem;
+    @media #{$mediaSM}{
+        font-size: 6rem;
+        .home &{
+            font-size: 8rem;
+        }
+    }
+}
+
+h3 {
+    @include tt-upper;
+    @include fw-light;
+    margin: 0 0 3.2rem;
+    line-height:1em;
+    font-size:4rem;
+    @media #{$mediaSM}{
+        font-size: 5rem;
+    }
+}
+
+h4 {
+    @include tt-upper;
+    @include fw-light;
+    margin: 0 0 3.2rem;
+    line-height:1em;
+    font-size:3.2rem;
+    @media #{$mediaSM}{
+        font-size: 4rem;
+    }
+}
+
+h5 {
+    @include tt-upper;
+    @include fw-bold;
+    margin: 0 0 2rem;
+    line-height:1em;
+    font-size:1.8rem;
+    @media #{$mediaSM}{
+        font-size:2.4rem;
+    }
+}
+
+h6 {
+    @include tt-upper;
+    @include fw-light;
+    margin: 0 0 1.5rem;
+    line-height:1em;
+    font-size:2.4rem;
+    @media #{$mediaSM}{
+        font-size:3rem;
+    }
+}

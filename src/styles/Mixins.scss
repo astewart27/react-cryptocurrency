@@ -1,0 +1,59 @@
+//---=== TEXT ALIGNMENT ===---
+@mixin ta-left {
+    text-align: left;
+}
+@mixin ta-right {
+    text-align: right;
+}
+@mixin ta-center {
+    text-align: center;
+}
+//---=== TEXT TRANSFORMS ===---
+@mixin tt-upper {
+    text-transform: uppercase;
+}
+@mixin tt-lower {
+    text-transform: lowercase;
+}
+@mixin tt-none {
+    text-transform: none;
+}
+@mixin tt-caps {
+    text-transform: capitalize;
+}
+//---=== TEXT DECORATION ===---
+@mixin td-none {
+    text-decoration: none;
+}
+@mixin td-underline {
+    text-decoration: underline;
+}
+@mixin td-strike {
+    text-decoration: strike;
+}
+//---=== WEIGHTS ===---
+@mixin fw-xbold {
+    font-weight: 800;
+}
+@mixin fw-bold {
+    font-weight: 700;
+}
+@mixin fw-medium {
+    font-weight: 500;
+}
+@mixin fw-regular {
+    font-weight: 400;
+}
+@mixin fw-light {
+    font-weight: 200;
+}
+//---=== STYLING ===---
+@mixin fs-italic {
+    font-style: italic;
+}
+@mixin fs-oblique {
+    font-style: oblique;
+}
+@mixin fs-normal {
+    font-style: normal;
+}

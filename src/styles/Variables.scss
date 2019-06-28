@@ -1,0 +1,25 @@
+/*---===<<< MEDIA QUERIES >>>===---*/
+$mediaXXS: 'screen and (max-width: 568px)';
+$mediaXS: 'screen and (max-width: 767px)';
+$mediaXSOnly: 'screen and (max-width: 767px) and (min-width: 1px)';
+$mediaSM: 'screen and (min-width: 768px)';
+$mediaSMOnly: 'screen and (min-width: 768px) and (max-width: 991px)';
+$mediaSMMax: 'screen and (max-width: 991px)';
+$mediaMD: 'screen and (min-width: 992px)';
+$mediaMDOnly: 'screen and (min-width: 992px) and (max-width: 1199px)';
+$mediaLG: 'screen and (min-width: 1200px)';
+$mediaLGOnly: 'screen and (min-width: 1200px) and (max-width: 1439px)';
+$mediaXL: 'screen and (min-width: 1440px)';
+
+/*---===<<< COLORS >>>===---*/
+$black: #000;
+$grey-001: #222;
+$grey-001-hover: #333;
+$grey-01: #464747;
+$grey-01-hover: #666666;
+$grey-02: #818181;
+$grey-03: #bebebe;
+$grey-04: #c9c7c6;
+$grey-05: #dadada;
+$grey-06: #fefefe;
+$white: #FFF;
