@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Header from './components/Header';
-import './App.scss';
+import List from './components/List';
+import './styles/App.scss';
 
 class App extends Component {
   constructor(props) {
@@ -18,10 +19,15 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <Header/>
-        </header>
+      <div className="wrapper">
+        <div className="container">
+          <header className="header-wrapper">
+            <Header/>
+          </header>
+          <div className="content-wrapper">
+            <List cryptocurrency={this.state.cryptocurrency}/>
+          </div>
+        </div>
       </div>
     )
   }

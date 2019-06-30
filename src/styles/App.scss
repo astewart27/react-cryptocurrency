@@ -1,0 +1,25 @@
+@import './Content.scss';
+@import './Carousel.scss';
+
+.wrapper {
+  background-image:url('../images/bg-image.jpg');
+  background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
+}
+
+.container {
+  width:80%;
+  margin:0 auto;
+}
+
+.header-wrapper {
+  @include ta-center;
+  color: $grey-001;
+
+  h1 {
+    margin:0;
+    padding:2rem 0;
+    color:$white;
+  }
+}
