@@ -1,27 +1,27 @@
-body,.carousel-wrapper, #carousel, .carousel-content {
+@import './Mixins.scss';
+
+.carousel-wrapper {
     margin:0;
     padding:0;
     width:100%;
     height:100vh;
-    overflow-x:hidden;
+    overflow-x: hidden;
 }
 
 .carousel-wrapper {
     position:relative;
 }
 
-.carousel-item {
-    background-size:cover;
-    background-position:center;
-    background-repeat:no-repeat;
-}
-
 .carousel-content {
     display:flex;
     flex-direction:column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     text-align: center;
+    height:100%;
+    width:45%;
+    margin:0 auto;
+    padding-left:10rem;
 }
 
 .arrow {
@@ -34,16 +34,87 @@ body,.carousel-wrapper, #carousel, .carousel-content {
     border-style:solid;
 }
 
-#arrow-left {
-    border-width:30px 40px 30px 0;
-    border-color: transparent #ffffff transparent transparent;
-    left:0;
-    margin-left:30px;
+a.previousButton svg > polygon, a.nextButton svg > polygon{
+    fill:$white;
 }
 
-#arrow-right {
-    border-width:30px 0 30px 40px;
-    border-color: transparent transparent transparent #ffffff;
-    right:0;
-    margin-right:30px;
+.coin-price {
+    font-size:6.4rem;
+    color:$white;
+    padding:2rem 0;
+    margin-bottom:2rem;
+
+    .coin-price-symbol {
+        font-weight:300;
+        margin-right:3rem;
+    }
+}
+
+.coin-details {
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:2rem;
+    img {
+        width:50px;
+    }
+
+    .coin-img {
+        margin-right:2rem;
+    }
+
+    .coin-name {
+        font-size:3rem;
+        @include fw-bold;
+        color:$white;
+        margin-right:2rem;
+    }
+
+    .coin-symbol {
+        font-size:2.6rem;
+        @include fw-medium;
+        color:$white;
+    }
+}
+
+.coin-stats {
+    font-size:3rem;
+    color:$white;
+    margin-bottom:2rem;
+    .coin-one-hour {
+        margin-right:2rem;
+        &.positive {
+            > span {
+                color:green;
+            }
+        }
+
+        &.negative {
+            > span {
+                color:red;
+            }
+        }
+    }
+
+    .coin-one-day {
+        &.positive {
+            > span {
+                color:green;
+            }
+        }
+
+        &.negative {
+            > span {
+                color:red;
+            }
+        }
+    }
+}
+
+.coin-chart {
+    width:100%;
+    img {
+        padding-top: 2rem;
+    }
 }

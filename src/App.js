@@ -15,6 +15,8 @@ class App extends Component {
     await fetch('/api/coinmarketcap/cryptocurrency')
       .then(response => response.json())
       .then(data => this.setState({ cryptocurrency: data.cryptoData.data }));
+
+      console.log(this.state.cryptocurrency);
   }
 
   render() {
