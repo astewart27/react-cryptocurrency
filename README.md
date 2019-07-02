@@ -8,7 +8,7 @@
 
 #### Ethereum
 
-![Ethereum Cryptocurrency Information](https://github.com/astewart27/react-cryptocurrency/blob/master/src/images/crytocurrency-eth.png)
+![Ethereum Cryptocurrency Information](https://github.com/astewart27/react-cryptocurrency/blob/master/src/images/cryptocurrency-eth.png)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
